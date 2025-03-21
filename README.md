@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/7c00bd82-0b86-4822-a181-a12d90711c82)# Aplikacja internetowa do zamawiania cateringu
+# Aplikacja internetowa do zamawiania cateringu
 
 # Dokumentacja projektu
 Autor	Łukasz Wołoszyn
