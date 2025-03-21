@@ -1,4 +1,4 @@
-# Aplikacja internetowa do zamawiania cateringu
+![image](https://github.com/user-attachments/assets/7c00bd82-0b86-4822-a181-a12d90711c82)# Aplikacja internetowa do zamawiania cateringu
 
 # Dokumentacja projektu
 Autor	Łukasz Wołoszyn
@@ -12,7 +12,7 @@ Narzędzia i technologie
 
 Wykorzystane programy: </br>
 •	Visual Studio Code 1.63.22 </br>
-•	XAMPP Control Panel v3.3.0 </br>
+•	XAMPP Control Panel v3.3.0 </br></br>
 Oraz techonolgii: </br>
 •	PHP (darmowa, www.php.net, dokumentacja: PHP: Documentation)</br>
 •	Laravel 11.x (darmowy, www.laravel.com, dokumentacja: Installation - Laravel 8.x - The PHP Framework For Web Artisans)</br>
@@ -65,10 +65,10 @@ Aby użytkownik/admin mógł zalogować się na swoje konto musi podać poprawny
 ![image](https://github.com/user-attachments/assets/d74b6839-7cae-4e18-a0c1-4e5d74b13892)
  	</br>Logowanie admina:</br>
 		Login: kamilmak@gmail.com</br>
-		Hasło: 1235</br>
+		Hasło: 1235</br></br>
 	Logowanie użytkownika:</br>
 		Login:  jannowak@gmail.com</br>
-		Hasło: 1235</br>
+		Hasło: 1235</br></br>
 Jeśli użytkownik poda nieprawidłowe dane logowania, zostają o tym poinformowany: </br>
 ![image](https://github.com/user-attachments/assets/0b2756b8-b668-4024-8331-cf3670f0007f)
  
@@ -98,11 +98,8 @@ Panel edycji zamówień użytkowników:</br>
 Edycja/usuwanie zamówienia:</br>
 ![image](https://github.com/user-attachments/assets/2a2d402c-0e7d-4726-916b-f07754008225)
 
-![image](https://github.com/user-attachments/assets/ff022150-1536-4b25-8cad-100523828797)
-
 Zarządzanie swoimi zasobami przez użytkownika aplikacji
 	Zalogowany użytkownik może zamawiać oraz edytować/usuwać swoje zamówienie:
 ![image](https://github.com/user-attachments/assets/b011be52-0fde-420f-93b3-3bd777db6ab7)
-![image](https://github.com/user-attachments/assets/01d54037-17f0-4fd5-b12b-d99b3e2ac238)
 
 
