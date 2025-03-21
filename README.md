@@ -11,9 +11,9 @@ Aplikacja obejmuje szeroki zakres usług związanych z cateringiem dietetycznym.
 Narzędzia i technologie
 
 Wykorzystane programy:
-•	Visual Studio Code 1.63.22
-•	XAMPP Control Panel v3.3.0
-Oraz techonolgii:
+•	Visual Studio Code 1.63.22 </br>
+•	XAMPP Control Panel v3.3.0 </br>
+Oraz techonolgii: </br>
 •	PHP (darmowa, www.php.net, dokumentacja: PHP: Documentation)
 •	Laravel 11.x (darmowy, www.laravel.com, dokumentacja: Installation - Laravel 8.x - The PHP Framework For Web Artisans)
 •	MySQL (darmowy, www.mysql.comm dokumentacja: MySQL :: MySQL Documentation)
