@@ -1,1 +1,115 @@
-# Aplikacja-internetowa-do-zamawiania-cateringu
+# Aplikacja internetowa do zamawiania cateringu
+
+# Dokumentacja projektu
+Autor	Łukasz Wołoszyn
+Kierunek, rok	Informatyka, II rok, st. stacjonarne (3,5-l)
+
+
+# Wstęp
+Projekt "Catering Dietetyczny" to aplikacja internetowa stworzona w celu zarządzania usługami cateringu dietetycznego. Aplikacja jest przeznaczona zarówno dla klientów, którzy chcą zamówić spersonalizowane plany żywieniowe, jak i dla administratorów zarządzających ofertami, zamówieniami oraz przepisami.
+Aplikacja obejmuje szeroki zakres usług związanych z cateringiem dietetycznym. Użytkownicy mogą przeglądać różnorodne diety dostosowane do ich indywidualnych potrzeb. Każda dieta jest szczegółowo opisana, zawierając informacje o posiłkach. Aplikacja umożliwia również przeglądanie przepisów kulinarnych, które są częścią oferowanych diet. 
+Narzędzia i technologie
+
+Wykorzystane programy:
+•	Visual Studio Code 1.63.22
+•	XAMPP Control Panel v3.3.0
+Oraz techonolgii:
+•	PHP (darmowa, www.php.net, dokumentacja: PHP: Documentation)
+•	Laravel 11.x (darmowy, www.laravel.com, dokumentacja: Installation - Laravel 8.x - The PHP Framework For Web Artisans)
+•	MySQL (darmowy, www.mysql.comm dokumentacja: MySQL :: MySQL Documentation)
+•	Bootstrap v5.3.3  (darmowy, www.getbootstrap.com, dokumentacja: Introduction · Bootstrap (getbootstrap.com) )
+
+# Baza danych
+Schemat ERD:
+![image](https://github.com/user-attachments/assets/9e463473-c70f-4f5e-bf40-9b34fee5c237)
+ 
+Rysunek 1. Diagram ERD
+Zawartość bazy danych:
+•	Tabela offers: Zawiera całą ofertę cateringu.
+•	Tabela orders: Zawiera informacje o zamówieniu.
+•	Tabela accounts: Zawiera informacje o użytkownikach oraz adminach.
+•	Tabela recipes: Zawiera przepisy wybranych dań z konkretnej oferty.
+
+
+
+
+
+
+# GUI
+Strona główna:
+ ![image](https://github.com/user-attachments/assets/13df8939-8572-423e-907f-1d9f1132acf7)
+
+Ogólny przegląd ofert:
+![image](https://github.com/user-attachments/assets/7a2a3a99-b5d6-4ba3-baec-82728c6695cc)
+
+Edycja przepisów po stronie admina:
+![image](https://github.com/user-attachments/assets/bd218582-f61f-48af-9a9b-a8a6da4e9517)
+ 
+# Uruchomienie aplikacji
+Aby uruchomić aplikację, należy mieć zainstalowane:
+1.	Visual Studio Code lub inne środowisko programistyczne
+2.	XAMPP Control Panel v3.3.0, następnie włączyć usługę Apache oraz MySQL
+3.	Najnowszą wersję PHP (www.php.net/downloads.php )
+4.	Najnowszą wersję Composer (Introduction - Composer (getcomposer.org))
+5.	Zainstaluj MySQL. (www.mysql.com/downloads)
+Następnie należy:
+6.	Wypakować projekt.
+7.	Stworzyć nową bazę danych catering po adresem: localhost /phpMyAdmin
+8.	Uruchomić polecenie composer install w katalogu projektu.
+9.	Uruchomić migracje bazy danych: php artisan db:seed.
+
+
+
+
+# Funkcjonalności aplikacji
+Rejestracja:
+Nowi użytkownicy mogą założyć nowe konto wpisując swoje dane:
+![image](https://github.com/user-attachments/assets/f4f9d236-9878-4d07-8178-74678e4edcc1)
+
+W kodzie użyto walidacji po stronie backendu za pomocą metody validate obiektu Request, co uniemożliwia stworzenia nowego konta, gdy użytkownik wprowadzi błędne dane: 
+![image](https://github.com/user-attachments/assets/d36b75ac-343b-4e61-8558-f914f25cca64)
+ 
+Logowanie:
+Aby użytkownik/admin mógł zalogować się na swoje konto musi podać poprawny adres email oraz hasło:
+![image](https://github.com/user-attachments/assets/d74b6839-7cae-4e18-a0c1-4e5d74b13892)
+ 	Logowanie admina:
+		Login: kamilmak@gmail.com
+		Hasło: 1235
+	Logowanie użytkownika:
+		Login:  jannowak@gmail.com
+		Hasło: 1235
+Jeśli użytkownik poda nieprawidłowe dane logowania, zostają o tym poinformowany: 
+![image](https://github.com/user-attachments/assets/0b2756b8-b668-4024-8331-cf3670f0007f)
+ 
+# CRUD przeprowadzany przez administratora
+Administrator ma możliwość edytowania, usuwania, dodawania między innymi zamówień użytkowników, przepisów oraz całej oferty. 
+Edycja/usuwanie oferty:
+![image](https://github.com/user-attachments/assets/c32679ab-bc54-4fcc-87a0-42471cee5648)
+
+Dodawanie nowej oferty:
+![image](https://github.com/user-attachments/assets/cb33ee4d-9ab8-4092-98ca-b03eddb1c636)
+ 
+Jeśli administrator poda nieprawidłowe wartości, również zadziała walidacja:
+![image](https://github.com/user-attachments/assets/4256bb98-acfe-4d68-8d94-960af8fc46f6)
+
+Panel edycji/usuwania przepisów:
+![image](https://github.com/user-attachments/assets/ea5975fb-05cc-45e3-8577-389689fecd55)
+ 
+Edycja przepisu:
+![image](https://github.com/user-attachments/assets/399f3510-f792-499c-a489-ae9365aca5e1)
+ 
+Dodawanie przepisu:
+![image](https://github.com/user-attachments/assets/7f6e84df-2cd1-40f4-80e5-126fb6cbd288)
+
+Panel edycji zamówień użytkowników:
+![image](https://github.com/user-attachments/assets/420a1a68-6b7f-48a4-ae64-326029191096)
+
+Edycja/usuwanie zamówienia:
+![image](https://github.com/user-attachments/assets/ff022150-1536-4b25-8cad-100523828797)
+
+Zarządzanie swoimi zasobami przez użytkownika aplikacji
+	Zalogowany użytkownik może zamawiać oraz edytować/usuwać swoje zamówienie:
+![image](https://github.com/user-attachments/assets/b011be52-0fde-420f-93b3-3bd777db6ab7)
+![image](https://github.com/user-attachments/assets/01d54037-17f0-4fd5-b12b-d99b3e2ac238)
+
+
